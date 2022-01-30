@@ -3,6 +3,7 @@ package com.vijaya.progs;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,7 +18,7 @@ public class LoginTest {
 
 		FirefoxOptions firefoxOptions = new FirefoxOptions();  
 		firefoxOptions.addArguments("--display=0");
-		WebDriver driver = new FirefoxDriver(firefoxOptions);
+		RemoteWebDriver driver = new FirefoxDriver(firefoxOptions);
 		
 		 System.setProperty("webdriver.gecko.driver", ".\\jars\\geckodriver.exe");
 		// WebDriver driver = new FirefoxDriver();
