@@ -16,12 +16,12 @@ public class LoginTest {
 	{
 		WebDriverManager.firefoxdriver().setup();
 
-		FirefoxOptions firefoxOptions = new FirefoxOptions();  
+		/* FirefoxOptions firefoxOptions = new FirefoxOptions();  
 		firefoxOptions.addArguments("--display=0");
-		RemoteWebDriver driver = new FirefoxDriver(firefoxOptions);
+		RemoteWebDriver driver = new FirefoxDriver(firefoxOptions);  */
 		
 		 System.setProperty("webdriver.gecko.driver", ".\\jars\\geckodriver.exe");
-		// WebDriver driver = new FirefoxDriver();
+		 RemoteWebDriver driver = new FirefoxDriver();
 	    driver.navigate().to("http://www.google.com/");  
 	    Thread.sleep(2000);
         System.out.println(driver.getTitle());
