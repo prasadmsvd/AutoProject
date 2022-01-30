@@ -22,6 +22,7 @@ public class LoginTest {
 		
 		 System.setProperty("webdriver.gecko.driver", ".\\jars\\geckodriver.exe");
 		 RemoteWebDriver driver = new FirefoxDriver();
+		 Thread.sleep(6000);
 	    driver.navigate().to("http://www.google.com/");  
 	    Thread.sleep(2000);
         System.out.println(driver.getTitle());
